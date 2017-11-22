@@ -24,12 +24,28 @@ body{
 #Contenido{
 	width: 900px;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto; 
 }
-/*------------------------------------------------------*/
 
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*Tamaño del Header*/
 header{
 	width: 100%;
+	animation: slidein 1s;
+}
+
+/*Animacion slidein*/
+@keyframes slidein{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
 }
 
 /*Sombra de titulo*/
@@ -49,6 +65,7 @@ header h1{
 	height: 80px;
 }
 
+/*Enlaces*/
 .Encabezado nav{
 	float: right;
 	padding-top: 4%;
@@ -82,8 +99,9 @@ header h1{
 	padding: 0;
 	width: 80%;
 }
-/*------------------------------------------------------*/
 
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
 /* Imagen Secundaria -----------------------------------*/
 /*Color de la caja*/
 #ImagenSecundaria{
@@ -133,8 +151,9 @@ header h1{
 	display: flex;
 	flex-flow: row wrap;
 }
-/*------------------------------------------------------*/
 
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
 /* Pie de Pajina ---------------------------------------*/
 /*Color de la caja*/
 .PiePajina{
@@ -252,14 +271,6 @@ footer{
 }
 /*------------------------------------------------------*/
 /*------------------------------------------------------*/
-
-/*------------------------------------------------------*/
-/*------------------------------------------------------*/
-/*Media Query para el modo de impresión*/
-@media print{
-
-}
-
 /*Media Query para moviles*/
 @media (min-width: 601px) and (max-width: 900px) {
 
@@ -299,6 +310,7 @@ footer{
   
 }
 
+/*Media Query*/
 @media (min-width: 320px) and (max-width: 600px) {
 	
 	#Contenido{
