@@ -1,0 +1,360 @@
+/*Fuente DancingScript ---------------------------------*/
+@font-face {
+	font-family: 'DancingScript'; 
+	src: url('../fonts/DancingScript.otf');
+}
+/*------------------------------------------------------*/
+
+/*Para Quitar los Marjenes Entre Div's -----------------*/
+*{ 
+margin: 0; 
+padding: 0; 
+}
+/*------------------------------------------------------*/
+
+/*Herencia Aplicada ------------------------------------*/
+body{
+	color: black;
+	background-color: #02010A;
+	font-family: 'DancingScript';
+}
+/*------------------------------------------------------*/
+
+/*Area Aplicada al Contenido----------------------------*/
+#Contenido{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*------------------------------------------------------*/
+
+header{
+	width: 100%;
+}
+
+/*Sombra de titulo*/
+header h1{
+	color: white;
+	text-shadow: 1px 2px 2px #02010A;
+	float: left;
+	padding-top: 2.5%;
+	padding-left: 3%;
+}
+
+/*Encabezado -------------------------------------------*/
+/*Color de la caja*/
+.Encabezado{
+	background-color: #5B7989;
+	border-radius: 10px 10px 0px 0px;
+	height: 80px;
+}
+
+.Encabezado nav{
+	float: right;
+	padding-top: 4%;
+	margin-right: 4%;
+}
+
+.Encabezado a{
+	color: white;
+}
+
+.Encabezado p{
+	color: white;
+}
+/*------------------------------------------------------*/
+/*Sobra de imagenes*/
+.Imagen, .Imagen1, .Imagen2{
+	box-shadow: 1px 2px 2px #02010A;
+}
+
+/*Imagen Central ---------------------------------------*/
+/*Color de la caja*/
+#ImagenCentral{
+	background-color: #82C3A6;
+	padding: 4%;
+}
+
+/*Tamaño de imagen*/
+.ImagenCentral .Imagen{
+	display: block;
+	margin: auto;
+	padding: 0;
+	width: 80%;
+}
+/*------------------------------------------------------*/
+
+/* Imagen Secundaria -----------------------------------*/
+/*Color de la caja*/
+#ImagenSecundaria{
+	background-color: #D5C75F;
+	border: 1px;
+}
+
+/*Tamaño de imagenes*/
+.ImagenSecundaria .Imagen1, .Imagen2{
+	margin: 8% 10% 0% 10%;
+	padding: 0;
+	width: 80%;
+}
+
+/*Pie de Imagen*/
+.IS1, .IS2 p{
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+/*Efecto de imagenes*/
+.Imagen1:hover{
+	transform: rotate(10deg);
+	box-shadow: 1px 2px 2px #82C3A6;
+}
+
+.Imagen2:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 1px 2px 2px #82C3A6;
+}
+
+/*Oredenamiento de Cajas*/
+.IS1{
+	order: 1;
+	flex-grow: 1;
+}
+.IS2{
+	order: 2;
+	flex-grow: 1;
+}
+
+/*Desktop*/
+.ImagenSecundaria div[class*="IS"]{
+	flex: 1 2 50%;
+}
+.ImagenSecundaria{
+	display: flex;
+	flex-flow: row wrap;
+}
+/*------------------------------------------------------*/
+
+/* Pie de Pajina ---------------------------------------*/
+/*Color de la caja*/
+.PiePajina{
+	background-color: #C6D5C5;
+	border-radius: 0px 0px 10px 10px;
+}
+
+/*Tamaño de imagenes*/
+.PiePajina .PieContacto, .PieTerminos, .PieSociales, .PieDerechos{
+	padding: 2.5%;
+	width: 20%;
+}
+
+/*Redes*/
+.PieSociales img[src$= '.svg']{
+	width: 15px;
+}
+
+/*Oredenamiento de Cajas*/
+.PieContacto{
+	order: 1;
+	flex-grow: 1;
+}
+.PieTerminos{
+	order: 2;
+	flex-grow: 1;
+}
+.PieSociales{
+	order: 3;
+	flex-grow: 1;
+}
+.PieDerechos{
+	order: 4;
+	flex-grow: 1;
+}
+
+/*Desktop*/
+.PiePajina div[class*="Pie"]{
+	flex: 1 2 20%;
+}
+.PiePajina{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+footer{
+	clear: both;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*Color de la caja*/
+.Imagenes{
+	background-color: #D5C75F;
+	border: 1px;
+	width: 100%;
+}
+
+/*Tamaño de imagenes*/
+.Imagenes .I1, .I2, .I3, .I4, .I5, .I6{
+	padding: 5% 10% 5% 10%;
+	width: 80%;
+}
+
+/*filtros de imagen*/
+.I1{
+	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
+}
+
+.Imagenes div:nth-child(even){
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+
+.I3{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+
+/*Oredenamiento de Cajas*/
+.Img1{
+	order: 1;
+	flex-grow: 1;
+}
+.Img2{
+	order: 2;
+	flex-grow: 1;
+}
+.Img3{
+	order: 3;
+	flex-grow: 1;
+}
+.Img4{
+	order: 4;
+	flex-grow: 1;
+}
+.Img5{
+	order: 5;
+	flex-grow: 1;
+}
+.Img6{
+	order: 6;
+	flex-grow: 1;
+}
+
+/*Desktop*/
+/*Aplicando el Desplazamiento de las Cajas*/
+.Imagenes div[class*="Img"]{
+	flex: 1 2 33%;
+}
+.Imagenes{
+	display: flex;
+	flex-flow: row wrap;
+}
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*Media Query para el modo de impresión*/
+@media print{
+
+}
+
+/*Media Query para moviles*/
+@media (min-width: 601px) and (max-width: 900px) {
+
+	#Contenido{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.ImagenCentral .Imagen{
+		display: block;
+		margin: auto;
+		padding: 0;
+		width: 95%;
+	}
+
+	.ImagenSecundaria div[class*="IS"]{
+		flex: 1 2 100%;
+	}
+
+	.Imagenes .I1, .I2, .I3, .I4, .I5, .I6{
+		padding: 3% 10% 3% 10%;
+		width: 80%;
+	}
+	
+	.Imagenes div[class*="Img"]{
+		flex: 1 2 100%;
+	}
+
+	.PiePajina .PieContacto, .PieTerminos, .PieSociales, .PieDerechos{
+		padding: 2% 20% 2% 20%;
+		width: 100%;
+	}
+  	.PiePajina div[class*="Pie"]{
+		flex: 1 2 100%;
+	}
+  
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+	
+	#Contenido{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	
+	.Encabezado{
+		height: 100px;
+	}
+	
+	header h1{
+		float: inherit;
+		font-size: 25px;
+	}
+	
+	.Encabezado p{
+		text-align: center;
+	}
+
+	.Encabezado h1{
+		text-align: center;
+	}
+
+	.Encabezado nav{
+		float: inherit;
+	}
+
+	.ImagenCentral .Imagen{
+		display: block;
+		margin: auto;
+		padding: 0;
+		width: 95%;
+	}
+
+	.ImagenSecundaria div[class*="IS"]{
+		flex: 1 2 100%;
+	}
+
+	.Imagenes .I1, .I2, .I3, .I4, .I5, .I6{
+		padding: 3% 10% 3% 10%;
+		width: 80%;
+	}
+	
+	.Imagenes div[class*="Img"]{
+		flex: 1 2 100%;
+	}
+
+	.PiePajina .PieContacto, .PieTerminos, .PieSociales, .PieDerechos{
+		padding: 5% 20% 5% 20%;
+		width: 100%;
+	}
+  	.PiePajina div[class*="Pie"]{
+		flex: 1 2 100%;
+	}
+  
+}
+
